@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./framework/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./framework/jquery/jquery-3.5.1.js"></script>
+    <script src="./framework/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div id="first" class="container">
+    <div class="row">
+        <div class="col">
+            <div id="first-in" class="splash fade-in align-body">
+                <div class="align-item splash-title">
+                    TRAINING<br/>
+                    IN THE<br/>
+                    PRISON
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="second" class="container">
+    <div class="row">
+        <div class="col">
+            <div id="second-in" class="main">
+                <div class="container-fluid">
+                    <div class="align-body" style="height: 90vh">
+                        <div id="input-area" style="width: 100%">
+                            <div class="input-group mb-3">
+                                <input id="range" type="text" class="form-control"
+                                       placeholder="set the numerical range; max 99">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input id="interval" type="text" class="form-control"
+                                       placeholder="set the time interval; max 42">
+                            </div>
+                        </div>
+                        <div id="number-area" style="display: none;">
+                            <div id="display-area">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="button-area" class="input-group">
+                        <button id="start-btn" class="btn btn-sm btn-dark form-control"
+                                onclick="start();" onkeypress="onKeyPress(this);">START
+                        </button>
+                        <button id="stop-btn" class="btn btn-sm btn-dark form-control"
+                                onclick="stop();" onkeypress="onKeyPress(this);"
+                                disabled>STOP
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/main.js"></script>
+<script src="./js/init.js"></script>
+</body>
